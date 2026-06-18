@@ -7,7 +7,15 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
 import string
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
+try:
+    nltk.data.find('tokenizers/punkt_tab')
+except LookupError:
+    nltk.download('punkt_tab')
 ps = PorterStemmer()
 
 from nltk.corpus import stopwords
