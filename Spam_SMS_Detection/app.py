@@ -52,8 +52,12 @@ def transform_text(text):
     
     return " ".join(y)
 
-tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
-model = pickle.load(open('model.pkl', 'rb'))
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+
+tfidf = pickle.load(open(os.path.join(BASE_DIR, 'model.pkl'), 'rb'))
+model = pickle.load(open(os.path.join(BASE_DIR, 'vectorizer.pkl'), 'rb'))
 
 st.title("📩 SMS Spam Classifier")
 
