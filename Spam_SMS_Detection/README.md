@@ -4,7 +4,7 @@ A Machine Learning web application that classifies SMS messages as **Spam** or *
 
 ## 🚀 Live Demo
 
-🌐 **Live App:** [LIVE APP](https://codsoft-gwh8cxygznrc9nxhq37gqg.streamlit.app/)
+🌐 **Live App:** [SMS Spam Classifier](https://codsoft-gwh8cxygznrc9nxhq37gqg.streamlit.app/)
 
 
 ## 📌 Features
@@ -184,7 +184,7 @@ GitHub:
 https://github.com/subhisharma409
 
 LinkedIn:
-[ LinkedIn profile)](https://www.linkedin.com/in/subhi-sharma/)
+[Subhi-Sharma](https://www.linkedin.com/in/subhi-sharma/)
 
 ---
 
