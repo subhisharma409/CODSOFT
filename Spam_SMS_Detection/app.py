@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+
 import string
 import nltk
 
@@ -61,11 +61,12 @@ def transform_text(text):
     return " ".join(y)
 
 import os
+import pickle
 
 BASE_DIR = os.path.dirname(__file__)
 
-tfidf = pickle.load(open(os.path.join(BASE_DIR, 'model.pkl'), 'rb'))
-model = pickle.load(open(os.path.join(BASE_DIR, 'vectorizer.pkl'), 'rb'))
+tfidf = pickle.load(open(os.path.join(BASE_DIR, 'vectorizer.pkl'), 'rb'))
+model = pickle.load(open(os.path.join(BASE_DIR, 'model.pkl'), 'rb'))
 
 st.title("📩 SMS Spam Classifier")
 
