@@ -4,13 +4,8 @@ A Machine Learning web application that classifies SMS messages as **Spam** or *
 
 ## 🚀 Live Demo
 
-🌐 **Live App:** YOUR_LIVE_LINK_HERE
+🌐 **Live App:** [LIVE APP](https://codsoft-gwh8cxygznrc9nxhq37gqg.streamlit.app/)
 
-Example:
-
-https://sms-spam-detection.streamlit.app
-
----
 
 ## 📌 Features
 
@@ -144,34 +139,6 @@ Not Spam
 
 ---
 
-## 📥 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/SMS-Spam-Detection.git
-```
-
-Move into the project directory:
-
-```bash
-cd SMS-Spam-Detection
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the Streamlit application:
-
-```bash
-streamlit run app.py
-```
-
----
-
 ## 📚 Libraries Used
 
 ```python
@@ -214,10 +181,10 @@ pickle
 B.Tech CSE (AI & ML)
 
 GitHub:
-https://github.com/YOUR_GITHUB_USERNAME
+https://github.com/subhisharma409
 
 LinkedIn:
-(Add your LinkedIn profile link)
+[ LinkedIn profile)](https://www.linkedin.com/in/subhi-sharma/)
 
 ---
 
