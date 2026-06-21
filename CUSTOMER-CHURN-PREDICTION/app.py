@@ -2,56 +2,31 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Load model and scaler
+
 model = joblib.load("bank_churn_model.pkl")
 scalar = joblib.load("scaler.pkl")
 
 st.title("🏦 Bank Customer Churn Prediction")
-
 st.write("Enter customer details below:")
 
-# Inputs
+
 credit_score = st.number_input("Credit Score", min_value=300, max_value=900, value=600)
+geography = st.selectbox("Geography",["France", "Germany", "Spain"])
 
-geography = st.selectbox(
-    "Geography",
-    ["France", "Germany", "Spain"]
-)
-
-gender = st.selectbox(
-    "Gender",
-    ["Male", "Female"]
-)
-
+gender = st.selectbox("Gender",["Male", "Female"])
 age = st.number_input("Age", min_value=18, max_value=100, value=40)
-
 tenure = st.number_input("Tenure", min_value=0, max_value=10, value=5)
-
 balance = st.number_input("Balance", value=50000.0)
 
-num_of_products = st.number_input(
-    "Number of Products",
-    min_value=1,
-    max_value=4,
-    value=1
-)
+num_of_products = st.number_input("Number of Products",min_value=1,max_value=4,value=1)
 
-has_cr_card = st.selectbox(
-    "Has Credit Card?",
-    [0,1]
-)
+has_cr_card = st.selectbox("Has Credit Card?",[0,1])
 
-is_active_member = st.selectbox(
-    "Is Active Member?",
-    [0,1]
-)
+is_active_member = st.selectbox("Is Active Member?",[0,1])
 
-estimated_salary = st.number_input(
-    "Estimated Salary",
-    value=50000.0
-)
+estimated_salary = st.number_input("Estimated Salary",value=50000.0)
 
-# Encoding
+
 
 Geography_Germany = 0
 Geography_Spain = 0
@@ -63,19 +38,7 @@ elif geography == "Spain":
 
 Gender_Male = 1 if gender == "Male" else 0
 
-input_data = np.array([[
-    credit_score,
-    age,
-    tenure,
-    balance,
-    num_of_products,
-    has_cr_card,
-    is_active_member,
-    estimated_salary,
-    Geography_Germany,
-    Geography_Spain,
-    Gender_Male
-]])
+input_data = np.array([[age,tenure,credit_score,num_of_products,has_cr_card,balance,is_active_member,estimated_salary,Geography_Germany,Geography_Spain,Gender_Male]])
 
 if st.button("Predict"):
     st.write("Input Data:")
