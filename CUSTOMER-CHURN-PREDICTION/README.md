@@ -126,7 +126,7 @@ Bank_Customer_Churn_Prediction
 ### Clone Repository
 
 ```bash
-git clone <repository-link>
+git clone https://github.com/subhisharma409/CODSOFT/tree/main/CUSTOMER-CHURN-PREDICTION
 ```
 
 ### Install Dependencies
