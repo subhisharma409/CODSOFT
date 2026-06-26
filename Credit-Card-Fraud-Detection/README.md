@@ -210,7 +210,7 @@ Credit-Card-Fraud-Detection/
 Clone the repository
 
 ```bash
-git clone https://github.com/subhisharma409/CODSOFT/Credit-Card-Fraud-Detection.git
+git clone https://github.com/subhisharma409/CODSOFT/tree/main/Credit-Card-Fraud-Detection
 ```
 
 Move into project
@@ -256,7 +256,7 @@ https://github.com/subhisharma409
 
 LinkedIn:
 
-https://linkedin.com/in/yourprofile
+https://www.linkedin.com/in/subhi-sharma/
 
 ---
 
