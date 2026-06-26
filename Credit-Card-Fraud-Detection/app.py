@@ -60,18 +60,19 @@ h1,h2,h3,h4{
 # Load Files
 # =====================================
 
-model = joblib.load("model.pkl")
-scaler = joblib.load("scaler.pkl")
-encoders = joblib.load("encoders.pkl")
-fraud_sample = joblib.load("fraud_sample.pkl")
-legit_sample = joblib.load("legitimate_sample.pkl")
+import os
+
+
+BASE_DIR = os.path.dirname(__file__)
+model = joblib.load(open(os.path.join(BASE_DIR, 'model.pkl'), 'rb'))
+scaler = joblib.load(open(os.path.join(BASE_DIR, 'scaler.pkl'), 'rb'))
+encoders = joblib.load(open(os.path.join(BASE_DIR, 'encoders.pkl'), 'rb'))
+fraud_sample = joblib.load(open(os.path.join(BASE_DIR, 'fraud_sample.pkl'), 'rb'))
+legit_sample = joblib.load(open(os.path.join(BASE_DIR, 'legitimate_sample.pkl'), 'rb'))
 
 # =====================================
 # Load Demo Samples
-# =====================================
-
-fraud_sample = joblib.load("fraud_sample.pkl")
-legit_sample = joblib.load("legitimate_sample.pkl")
+# ====================================
 
 # =====================================
 # Initialize Session State
