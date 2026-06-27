@@ -4,6 +4,20 @@ import joblib
 from datetime import datetime
 
 # =====================================
+# Load Demo Samples
+# ====================================
+import os
+
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+model = joblib.load(BASE_DIR / "model.pkl")
+scaler = joblib.load(BASE_DIR / "scaler.pkl")
+encoders = joblib.load(BASE_DIR / "encoders.pkl")
+fraud_sample = joblib.load(BASE_DIR / "fraud_sample.pkl")
+legit_sample = joblib.load(BASE_DIR / "legitimate_sample.pkl")
+
+# =====================================
 # Page Configuration
 # =====================================
 
@@ -55,31 +69,6 @@ h1,h2,h3,h4{
 
 </style>
 """, unsafe_allow_html=True)
-
-# =====================================
-# Load Files
-# =====================================
-
-import os
-
-from pathlib import Path
-
-BASE_DIR = Path(__file__).parent
-
-BASE_DIR = os.path.dirname(__file__)
-model = joblib.load(BASE_DIR / "model.pkl")
-scaler = joblib.load(BASE_DIR / "scaler.pkl")
-encoders = joblib.load(BASE_DIR / "encoders.pkl")
-fraud_sample = joblib.load(BASE_DIR / "fraud_sample.pkl")
-legit_sample = joblib.load(BASE_DIR / "legitimate_sample.pkl")
-
-# =====================================
-# Load Demo Samples
-# ====================================
-
-# =====================================
-# Initialize Session State
-# =====================================
 
 defaults = {
 
