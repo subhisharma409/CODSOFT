@@ -2,9 +2,12 @@ import streamlit as st
 import joblib
 import numpy as np
 
+from pathlib import Path
 
-model = joblib.load("bank_churn_model.pkl")
-scalar = joblib.load("scaler.pkl")
+BASE_DIR = Path(__file__).parent
+
+model = joblib.load(BASE_DIR / "bank_churn_model.pkl")
+scaler = joblib.load(BASE_DIR / "scaler.pkl")
 
 st.title("🏦 Bank Customer Churn Prediction")
 st.write("Enter customer details below:")
@@ -43,7 +46,7 @@ input_data = np.array([[age,tenure,credit_score,num_of_products,has_cr_card,bala
 if st.button("Predict"):
     st.write("Input Data:")
     st.write(input_data)
-    input_scaled = scalar.transform(input_data)
+    input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)
     probability = model.predict_proba(input_scaled)
 
