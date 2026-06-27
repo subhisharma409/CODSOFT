@@ -7,6 +7,23 @@ A Machine Learning web application that classifies SMS messages as **Spam** or *
 🌐 **Live App:** [SMS Spam Classifier](https://codsoft-gwh8cxygznrc9nxhq37gqg.streamlit.app/)
 
 
+## 📸 Project Screenshots
+
+### Home Page
+
+![Home](spam_sms_images/spam_sms_home.png)
+
+### Fraud Prediction
+
+![Fraud](spam_sms_images/spam_sms_fraud.png)
+
+### Legitimate Prediction
+
+![Legitimate](spam_sms_images/spam_sms_ham.png)
+
+
+---
+
 ## 📌 Features
 
 - SMS classification into Spam or Ham

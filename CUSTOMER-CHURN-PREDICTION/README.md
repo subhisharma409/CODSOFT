@@ -4,6 +4,14 @@ A Machine Learning project that predicts whether a customer is likely to leave t
 
 ---
 Live demo: [CUSTOMER-CHURN-PREDICTION](https://codsoft-gwh8cxygznrc9nxhq37gqg.streamlit.app/)
+
+## 📸 Project Screenshots
+
+### Home Page
+
+![Home](customer_churn_images/customer_churn_home.png)
+
+---
 ## 📌 Project Overview
 
 Customer churn is one of the biggest challenges faced by banks. This project uses Machine Learning to analyze customer behavior and predict whether a customer is likely to exit the bank.

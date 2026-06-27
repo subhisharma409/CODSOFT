@@ -62,13 +62,16 @@ h1,h2,h3,h4{
 
 import os
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
 
 BASE_DIR = os.path.dirname(__file__)
-model = joblib.load(open(os.path.join(BASE_DIR, 'model.pkl'), 'rb'))
-scaler = joblib.load(open(os.path.join(BASE_DIR, 'scaler.pkl'), 'rb'))
-encoders = joblib.load(open(os.path.join(BASE_DIR, 'encoders.pkl'), 'rb'))
-fraud_sample = joblib.load(open(os.path.join(BASE_DIR, 'fraud_sample.pkl'), 'rb'))
-legit_sample = joblib.load(open(os.path.join(BASE_DIR, 'legitimate_sample.pkl'), 'rb'))
+model = joblib.load(BASE_DIR / "model.pkl")
+scaler = joblib.load(BASE_DIR / "scaler.pkl")
+encoders = joblib.load(BASE_DIR / "encoders.pkl")
+fraud_sample = joblib.load(BASE_DIR / "fraud_sample.pkl")
+legit_sample = joblib.load(BASE_DIR / "legitimate_sample.pkl")
 
 # =====================================
 # Load Demo Samples
