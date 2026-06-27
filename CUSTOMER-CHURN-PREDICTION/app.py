@@ -7,7 +7,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent
 
 model = joblib.load(BASE_DIR / "bank_churn_model.pkl")
-scaler = joblib.load(BASE_DIR / "scaler.pkl")
+scaler = joblib.load(BASE_DIR / "bank_churn_scaler.pkl")
 
 st.title("🏦 Bank Customer Churn Prediction")
 st.write("Enter customer details below:")
