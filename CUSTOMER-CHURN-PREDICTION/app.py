@@ -29,8 +29,6 @@ is_active_member = st.selectbox("Is Active Member?",[0,1])
 
 estimated_salary = st.number_input("Estimated Salary",value=50000.0)
 
-
-
 Geography_Germany = 0
 Geography_Spain = 0
 
@@ -41,7 +39,19 @@ elif geography == "Spain":
 
 Gender_Male = 1 if gender == "Male" else 0
 
-input_data = np.array([[age,tenure,credit_score,num_of_products,has_cr_card,balance,is_active_member,estimated_salary,Geography_Germany,Geography_Spain,Gender_Male]])
+input_data = np.array([[
+    credit_score,
+    age,
+    tenure,
+    balance,
+    num_of_products,
+    has_cr_card,
+    is_active_member,
+    estimated_salary,
+    Geography_Germany,
+    Geography_Spain,
+    Gender_Male
+]])
 
 if st.button("Predict"):
     st.write("Input Data:")
